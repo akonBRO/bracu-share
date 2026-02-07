@@ -1,0 +1,38 @@
+
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+@import 'react-datetime-picker/dist/DateTimePicker.css';
+@import 'react-calendar/dist/Calendar.css';
+@import 'react-clock/dist/Clock.css';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.custom-datetime-picker {
+  width: 100%;
+}
+.react-datetime-picker__wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.23) !important; /* Match MUI outlined input border */
+  border-radius: 4px; /* Match MUI border radius */
+  padding: 8.5px 14px; /* Adjust padding to look similar to TextField */
+}
+.react-datetime-picker__inputGroup input {
+  outline: none !important;
+  border: none !important;
+}
+.react-datetime-picker__calendar--closed {
+  display: none;
+}
+.react-datetime-picker__calendar {
+  z-index: 1301 !important; /* Ensure it appears above MUI Modals (usually z-index 1300) */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
